@@ -1,5 +1,6 @@
-// user/firebase.js
+// Mobile/firebase.js
 import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 import { getDatabase, ref, set } from "firebase/database";
 
 const firebaseConfig = {
@@ -12,9 +13,14 @@ const firebaseConfig = {
   appId: "1:26999020261:web:5295385342531fbe70520c"
 };
 
+// Initialiser l’app Firebase
 const app = initializeApp(firebaseConfig);
+
+// ✅ Exporter Auth et Database
+export const auth = getAuth(app);
 export const db = getDatabase(app);
 
+// Exemple utilitaire pour sauvegarder la position
 export const saveLocation = async (userId, location) => {
   await set(ref(db, "locations/" + userId), {
     lat: location.coords.latitude,
@@ -22,3 +28,4 @@ export const saveLocation = async (userId, location) => {
     ts: Date.now(),
   });
 };
+

@@ -1,3 +1,4 @@
+// mobile/app/index.js
 import React, { useEffect, useState } from "react";
 import { View, Text, TouchableOpacity, StyleSheet, ActivityIndicator } from "react-native";
 import MapView, { Marker } from "react-native-maps";
@@ -160,12 +161,18 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     color: "#2c3e50",
   },
-  map: { flex: 1, margin: 10, borderRadius: 12 },
+  map: {
+    flex: 0.70,   // ⬅️ au lieu de flex: 1
+    margin: 10,
+    borderRadius: 12,
+  },
   controls: {
+    flex: 0.25,   // ⬅️ occupe 25% de l’écran
     padding: 15,
     borderTopWidth: 1,
     borderColor: "#ddd",
     backgroundColor: "#fff",
+    justifyContent: "center",
   },
   btn: {
     padding: 12,
