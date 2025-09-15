@@ -37,6 +37,7 @@ export default function Auth({ onLogin }) {
       <TextInput
         style={styles.input}
         placeholder="Email"
+        placeholderTextColor="#999"
         value={email}
         onChangeText={setEmail}
         keyboardType="email-address"
@@ -45,6 +46,7 @@ export default function Auth({ onLogin }) {
       <TextInput
         style={styles.input}
         placeholder="Mot de passe"
+        placeholderTextColor="#999"
         secureTextEntry
         value={password}
         onChangeText={setPassword}
@@ -91,7 +93,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     color: "#333",
   },
-  placeholder: { color: "#999" },
+  
   button: {
     backgroundColor: "#1976d2",
     paddingVertical: 12,
