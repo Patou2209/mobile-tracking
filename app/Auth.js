@@ -45,7 +45,7 @@ export default function Auth({ onLogin }) {
       <TextInput
         style={styles.input}
         placeholder="Mot de passe"
-        secureTextEntry={true}
+        secureTextEntry
         value={password}
         onChangeText={setPassword}
       />
@@ -91,6 +91,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     color: "#333",
   },
+  placeholder: { color: "#999" },
   button: {
     backgroundColor: "#1976d2",
     paddingVertical: 12,
