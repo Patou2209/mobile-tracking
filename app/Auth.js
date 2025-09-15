@@ -1,4 +1,4 @@
-// app/Auth.js
+// Mobile/Auth.js
 import { useState } from "react";
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from "react-native";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
@@ -45,7 +45,7 @@ export default function Auth({ onLogin }) {
       <TextInput
         style={styles.input}
         placeholder="Mot de passe"
-        secureTextEntry
+        secureTextEntry={true}
         value={password}
         onChangeText={setPassword}
       />
