@@ -27,6 +27,11 @@
         "ACCESS_COARSE_LOCATION",
         "ACCESS_BACKGROUND_LOCATION",
         "INTERNET",
+        "WAKE_LOCK",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "INTERNET",
         "WAKE_LOCK"
       ]
     },
@@ -47,7 +52,8 @@
         }
       ],
       "expo-font",
-      "expo-web-browser"
+      "expo-web-browser",
+      "expo-secure-store"
     ],
     "experiments": {
       "typedRoutes": true
@@ -57,6 +63,12 @@
       "eas": {
         "projectId": "d2efe40e-b3cd-4c6e-88c4-51151c7c55d1"
       }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/d2efe40e-b3cd-4c6e-88c4-51151c7c55d1"
     }
   }
 }
