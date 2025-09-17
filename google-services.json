@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "26999020261",
+    "firebase_url": "https://live-tracking-gps-technoweb-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "live-tracking-gps-technoweb",
+    "storage_bucket": "live-tracking-gps-technoweb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26999020261:android:070b4144a6bb414e70520c",
+        "android_client_info": {
+          "package_name": "com.technoweb.mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAHx4RyQ2lZdojAEBl3NQTqDZFa0uqIMs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
